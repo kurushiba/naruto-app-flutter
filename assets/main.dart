@@ -10,20 +10,20 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  @override
+@override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Naruto図鑑'),
-          backgroundColor: const Color(0xFFBCE2E8),
+          title: Text('Naruto図鑑'),
+          backgroundColor: Color(0xFFBCE2E8),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: EdgeInsets.all(16),
           child: ListView.builder(
             itemCount: 9,
             itemBuilder: (context, index) {
-              return const Card(
+              return Card(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "テストキャラクター",
                         style: TextStyle(
@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 8.0, bottom: 8.0),
+                      padding: const EdgeInsets.only(left: 8.0, bottom: 8.0),
                       child: Text(
                         "なし",
                         style: TextStyle(fontSize: 14.0),
